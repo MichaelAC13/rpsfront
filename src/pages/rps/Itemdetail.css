@@ -1,0 +1,84 @@
+.details {
+width: 100%;
+height: 100%;
+border: #03213c;
+border-radius: 5px;
+background-color: rgb(254, 255, 255);
+box-shadow: 0px 2px 7px #03213c;
+margin-left: 5px;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+padding:5px;
+}
+
+.display-1 {
+  display: flex;
+  width: 100%;
+}
+
+.box-1 {
+  border-style: solid;
+  border-width: 1px;
+  min-width: 50%;
+  border-color: #c3d4e2;
+}
+
+.box-1 {
+  border-style: solid;
+  border-width: 1px;
+  min-width: 50%;
+  border-color: #c3d4e2;
+  border-top-right-radius: 5px;
+}
+
+.box-2 {
+  border-color: #c3d4e2;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  min-width: 50%;
+}
+
+.box-3{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.linedetails {
+  font-size: 12px;
+  display: flex;
+  font-weight: bold;
+  height: 20px;
+  padding-top: 2px;
+  padding-left: 5px;
+  
+}
+.det{
+  width: 25%;
+}
+
+.linedetails-2{
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+}
+
+.linedetails-3{
+  font-size: 12px;
+  padding-top: 2px;
+  padding-left: 5px;
+}
+
+.linedetails-4{
+  border-bottom: solid;
+  border-color: #c3d4e2;
+  border-width: 1px;
+}
+
+.logo{
+  border-top-left-radius: 5px;
+  background-image: linear-gradient(rgba(6, 81, 119, 0.089), rgba(9, 82, 119, 0));
+  width: 50%;
+}

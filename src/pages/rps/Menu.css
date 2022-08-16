@@ -1,0 +1,89 @@
+*{text-decoration: none;}
+
+/* # The Rotating Marker # */
+details summary::-webkit-details-marker { display: none; }
+summary::after {
+  font-family: "Hiragino Mincho ProN", "Open Sans", sans-serif;
+  content: ":::";
+  position: absolute;
+  top: 1rem;
+  left: 0.8rem;
+  transform: rotate(0);
+  transform-origin: center;
+  transition: 0.50s transform ease;
+}
+
+details[open] > summary:after {
+  transform: rotate(90deg);
+  transition: 0.50s transform ease;
+  
+}
+
+/* # The Sliding Summary # */
+details { overflow: hidden; }
+details summary {
+  position: relative;
+  z-index: 10;
+}
+@keyframes details-show {
+  from {
+    margin-bottom: -80%;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+details > *:not(summary) {
+  animation: details-show 1000ms ease-in-out;
+  position: relative;
+  z-index: 1;
+  transition: all 0.80s ease-in-out;
+  background-color: #28fffb;
+  color: transparent;
+  overflow: hidden;
+}
+details[open] > *:not(summary) { color: inherit; }
+
+/* # Just Some Pretty Styles # */
+body { font-family: "Open Sans", sans-serif }
+
+details {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0px;
+  background: rgba(255, 255, 255, 0);
+}
+
+summary {
+  border: 4px solid transparent;
+  outline: none;
+  padding: 1rem;
+  display: block;
+  background: rgb(3, 59, 107);
+  color: white;
+  padding-left: 2.2rem;
+  position: relative;
+  cursor: pointer;
+}
+
+details[open] summary,
+summary:hover {
+  color: #d7f5f3;
+  background: rgb(68, 68, 68);
+}
+
+summary:hover strong,
+details[open] summary strong,
+summary:hover::after,
+details[open] summary::after {
+  color: #28fffb;
+}
+
+.content {
+  border-top: none;
+  background-color: rgb(11, 92, 142);
+  cursor: pointer;
+  font-size: 12px;
+  height: 100%;
+}
+
+

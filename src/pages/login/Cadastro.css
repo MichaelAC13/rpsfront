@@ -1,0 +1,7 @@
+.box-c{
+  width: 50%;
+  background-color: aquamarine;
+  background: #FFFFFF url("/public/Cadastro1.jpg") no-repeat right center fixed;
+  background-position:left;
+  background-size: contain;
+}
